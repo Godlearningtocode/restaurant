@@ -5,6 +5,7 @@ module.exports = {
     entry: [
         './src/index.js',
         './src/content.js',
+        './src/menu.js',
     ],
     devtool: 'inline-source-map',
     output: {
@@ -20,11 +21,6 @@ module.exports = {
             {
                 test: /\.(png|jpg|svg|jpeg|gif)$/i,
                 type: 'asset/resource',
-                use: [
-                    {
-                        loader: 'file-loader',
-                    },
-                ],
             },
         ],
     },

@@ -1,17 +1,16 @@
-import content from './content.js';
-import './styles.css';
-import image from './restaurant-icon-dinner-vector-39668275.jpg';
+import css from './styles.css';
+import homePage from './content.js';
+import menuPage from './menu.js';
 
-function component() {
-    const mainContent = document.querySelector('#content');
-    let heading = document.createElement('div');
-    heading.classList.add('heading');
-    heading.innerText = content();
-    mainContent.appendChild(heading);
+const header = document.querySelector('#header');
 
-    const myImage = new Image();
-    myImage.src = image;
-    mainContent.appendChild(myImage);
-}
+const heading = document.createElement('div');
+heading.classList.add('header')
+heading.textContent = 'Gulmohar | Bar & Curryhouse'
 
-component();
+const intro = document.createElement('div');
+intro.classList.add('intro');
+intro.textContent = 'Gulmohar | Bar & Curryhouse is a haven for slow living; tucked in the heart of Baner, Gulmohar is a place that makes you feel close to nature and allows you to take a moment to slow down. Providing the best of both worlds with indoor seating as well as a beautifull backyard setting that will make you forget all about the stress and provide comfort that comes with easy living!';
+
+header.appendChild(heading);
+header.appendChild(intro);
