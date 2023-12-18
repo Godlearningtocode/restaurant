@@ -6,6 +6,7 @@ module.exports = {
         './src/index.js',
         './src/content.js',
         './src/menu.js',
+        './src/contact.js'
     ],
     devtool: 'inline-source-map',
     output: {
